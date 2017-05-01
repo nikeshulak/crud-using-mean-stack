@@ -12,10 +12,10 @@
         <table >
             <tr>
                <!--  <th>ID</th> -->
-                <th>Name</th>
-                <th>Occupation</th>
-                <th>Gender</th>
-                <th>Age</th>
+                <th>Expense name</th>
+                <th>Remarks</th>
+                <th>Category</th>
+                <th>Amount</th>
             </tr>
             <tr  class="animate" ng-repeat="employee in record | filter: searchText "> 
            

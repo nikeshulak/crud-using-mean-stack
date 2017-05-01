@@ -2,27 +2,28 @@
 
 <form name ="myForm" class="form-horizontal">
   <div class="form-group">
-    <label for="name" class="col-sm-2 control-label">Name :</label>
+    <label for="name" class="col-sm-2 control-label">Expense Name :</label>
     <div class="col-sm-5">
-      <input ng-pattern="/^[a-zA-Z\s]*$/" type="text" class="form-control" id="name" ng-model="employee.name" placeholder="Enter Name" required>
+      <input ng-pattern="/^[a-zA-Z\s]*$/" type="text" class="form-control" id="name" ng-model="employee.name" placeholder="Enter Expense Name" required>
     </div>
   </div>
   <div class="form-group">
-    <label for="occupation" class="col-sm-2 control-label">Occupation :</label>
+    <label for="occupation" class="col-sm-2 control-label">Remarks :</label>
     <div class="col-sm-5">
-      <input ng-pattern="/^[a-zA-Z\s]*$/" type="text" class="form-control" id="occupation" ng-model="employee.occupation" placeholder="Enter Occupation" required>
+      <input type="text" class="form-control" id="occupation" ng-model="employee.occupation" placeholder="Enter Remarks" required>
+      <!--  ng-pattern="/^[a-zA-Z\s]*$/" added for occupation -->
     </div>
   </div>
   <div class="form-group">
-    <label for="gender" class="col-sm-2 control-label">Gender :</label>
+    <label for="gender" class="col-sm-2 control-label">Category :</label>
     <div class="col-sm-5">
-      <input ng-pattern="/^[a-zA-Z\s]*$/" type="text" class="form-control" id="gender" ng-model="employee.gender" placeholder="Gender" required>
+      <input ng-pattern="/^[a-zA-Z\s]*$/" type="text" class="form-control" id="gender" ng-model="employee.gender" placeholder="Category" required>
     </div>
   </div>
   <div class="form-group">
-    <label for="age" class="col-sm-2 control-label">Age :</label>
+    <label for="age" class="col-sm-2 control-label">Amount :</label>
     <div class="col-sm-5">
-      <input type="number" class="form-control" id="age" ng-model="employee.age" min="1" max="150"placeholder="Enter your age"  required>
+      <input type="number" class="form-control" id="age" ng-model="employee.age" min="1" max="" placeholder="Enter amount"  required>
     </div>
   </div>
   <div class="form-group">
@@ -54,7 +55,7 @@
                 <input type="text" ng-model="employee.gender"/></td>
             </tr>
             <tr>
-                <td>Enter Age: </td><td>
+                <td>Enter Amount: </td><td>
                 <input type="text" ng-model="employee.age"/></td>
             </tr>
             <tr> 
