@@ -1,7 +1,7 @@
 angular.module("delete", []).config(function($stateProvider) {
     $stateProvider.state('deleteEmployee', {
         url: '/delete/:_id',
-        templateUrl: "delete/delete.tpl",
+        templateUrl: "home/delete.tpl",
         controller: "DeleteController"
 
     });

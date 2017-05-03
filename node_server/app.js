@@ -5,8 +5,11 @@ var app = express();
 var mongoose = require('mongoose');
 var jsonfile = require('jsonfile')
 var bodyParser = require('body-parser');
-var fs = require('fs-extra')
+var fs = require('fs-extra');
+
 var employeeModule = require('./routes/employeeController.js');
+var categoryModule = require('./routes/categoryController.js');
+
 var methodOverride = require('method-override');
 /*Configuration*/
 config = require('./config.json'); 
@@ -72,6 +75,16 @@ app.post('/editemployee', employeeModule.employeeEditMethod);
 app.post('/addemployee', employeeModule.employeeAddMethod);
 
 app.delete('/deleteemployee/:_id',employeeModule.employeeDeleteMethod);
+
+//category
+app.get('/categorylist', categoryModule.categoryListMethod);
+
+app.post('/editcategory', categoryModule.categoryEditMethod);
+
+app.post('/addcategory', categoryModule.categoryAddMethod);
+
+app.delete('/deletecategory/:_id',categoryModule.categoryDeleteMethod);
+
 
 app.listen(config.port);
 console.log('server started at:  '+config.port);

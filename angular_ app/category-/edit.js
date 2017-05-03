@@ -1,7 +1,7 @@
 angular.module("edit", []).config(function($stateProvider) {
     $stateProvider.state('edit', {
         url: '/edit/:_id',
-        templateUrl: "add/add.tpl",
+        templateUrl: "home/add.tpl",
         controller: "EditController"
 
     });

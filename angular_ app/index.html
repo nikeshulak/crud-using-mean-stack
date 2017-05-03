@@ -1,3 +1,4 @@
+<!-- index.html, category.html -->
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
@@ -10,17 +11,31 @@
     <script type="text/javascript" src="libs/0angular.js"></script>
     <script type="text/javascript" src="libs/1angular-ui-router.js"></script>
     <script type="text/javascript" src="app.js"></script>
+
     <script type="text/javascript" src="home/home.js"></script>
-    <script type="text/javascript" src="add/add.js"></script>
-    <script type="text/javascript" src="add/add-service.js"></script>
-    <script type="text/javascript" src="edit/edit.js"></script>
-    <script type="text/javascript" src="delete/delete.js"></script>
+    <script type="text/javascript" src="home/add.js"></script>
+    <script type="text/javascript" src="home/add-service.js"></script>
+    <script type="text/javascript" src="home/edit.js"></script>
+    <script type="text/javascript" src="home/delete.js"></script>
+
+    <script type="text/javascript" src="category/category.js"></script>
+    <script type="text/javascript" src="category/addcategory.js"></script>
+    <script type="text/javascript" src="category/addcategory-service.js"></script>
+    <script type="text/javascript" src="category/editcategory.js"></script>
+    <script type="text/javascript" src="category/deletecategory.js"></script>
+
+    <!-- <script type="text/javascript" src="category/home.js"></script>
+    <script type="text/javascript" src="category/add.js"></script>
+    <script type="text/javascript" src="category/add-service.js"></script>
+    <script type="text/javascript" src="category/edit.js"></script>
+    <script type="text/javascript" src="category/delete.js"></script> -->
+
     <title></title>
 </head>
 
-<body ng-controller="IndexController">
+<body><!-- ng-controller="" IndexController, CategoryController -->
                 <div class = "container-fluid">
-                <div class="row" ><h2 style = "text-align: center;">Expense App</h2></div>
+                <div class="row" ><h2 style = "text-align: center;">Expense App - Category</h2></div>
                     <div class="container custom_background" ui-view>
                     </div>
                 </div>

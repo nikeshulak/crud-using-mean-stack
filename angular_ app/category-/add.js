@@ -1,7 +1,7 @@
 angular.module("add", []).config(function($stateProvider) {
     $stateProvider.state('add', {
         url: '/add',
-        templateUrl: "add/add.tpl",
+        templateUrl: "home/add.tpl",
         controller: "AddController"
 
     });
